@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0;
+}
+body{
+    background-image: url(iphone_xs.jpg);
+    background-color: #07313A;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+                  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    display:flex;
+    justify-content: center;
+}
+ul{
+    padding: 0;
+    width: 300px;
+    position: relative;
+}
+li{
+    transform: scale(1.35);
+    background-color: #95b8bf;
+    list-style: none;
+    align-items: center;
+    padding: 0.5rem;
+    position: absolute;
+    width: 100%;
+    transition: transform 200ms cubic-bezier(.88,-0.05,.23,.99), top 200ms cubic-bezier(.88,-0.05,.23,.99), opacity 200ms ease;
+    border-radius: 0.3rem;
+    text-shadow: 5px 5px 0 0 #fff;
+
+}
+li:hover{
+    transform: scale(1.4);
+}
+li.open:hover{
+    transform: scale(1.35);
+
+}
+
+h3,p{
+    margin: 0;
+}
+h3{
+    margin-bottom: 0.25rem;
+}
+h3,h3 span{
+    display: flex;
+    align-items: center;
+}
+h3 span{
+    width: 28px;
+    line-height: 1;
+}
+p{
+    font-size: 0.85rem;
+}
